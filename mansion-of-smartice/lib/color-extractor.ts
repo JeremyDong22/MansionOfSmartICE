@@ -1,7 +1,8 @@
 // Color extraction utility using Vibrant.js
 // Extracts dominant colors from images for dynamic backgrounds
 
-const Vibrant = require('node-vibrant');
+// @ts-expect-error - node-vibrant doesn't have proper TypeScript types
+import Vibrant from 'node-vibrant';
 
 export interface ExtractedColors {
   vibrant: string | null;

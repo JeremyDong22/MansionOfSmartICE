@@ -77,7 +77,7 @@ export function HeroSection() {
             {/* Specials Section - Authentic Regional Dishes */}
             <section id="specials" className="py-20 px-6 lg:px-12 bg-white dark:bg-gray-900">
                 <div className="max-w-7xl mx-auto">
-                    <h2 className="text-4xl font-light text-center mb-4">今日特色 Today's Specials</h2>
+                    <h2 className="text-4xl font-light text-center mb-4">今日特色 Today&apos;s Specials</h2>
                     <p className="text-center text-gray-600 dark:text-gray-400 mb-12">
                         云贵川经典风味 · Authentic Flavors from the Mountains
                     </p>

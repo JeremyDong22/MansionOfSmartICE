@@ -17,9 +17,9 @@ export function CategorySwitcher({ selectedCategory, onCategoryChange }: Categor
   const [showCategoryName, setShowCategoryName] = useState(false);
   const [displayedCategoryName, setDisplayedCategoryName] = useState('');
   const [isInitialized, setIsInitialized] = useState(false);
-  const fadeTimeout = useRef<NodeJS.Timeout>();
+  const fadeTimeout = useRef<NodeJS.Timeout | null>(null);
   const isDragging = useRef(false);
-  const scrollTimeout = useRef<NodeJS.Timeout>();
+  const scrollTimeout = useRef<NodeJS.Timeout | null>(null);
   const [isMobile, setIsMobile] = useState(false);
   
   // Detect if mobile device

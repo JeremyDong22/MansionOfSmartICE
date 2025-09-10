@@ -80,7 +80,7 @@ const MediaContent = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
         <div className='text-center'>
           <h3 className='text-xl font-semibold mb-2 text-gray-900 dark:text-white'>Seasonal Menu</h3>
           <p className='text-gray-600 dark:text-gray-400'>
-            Ever-changing offerings that reflect nature\'s rhythm
+            Ever-changing offerings that reflect nature&apos;s rhythm
           </p>
         </div>
         <div className='text-center'>

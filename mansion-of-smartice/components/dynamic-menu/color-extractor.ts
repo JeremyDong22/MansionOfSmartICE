@@ -110,7 +110,7 @@ function rgbToHex(r: number, g: number, b: number): string {
 /**
  * Find a good accent color from the palette
  */
-function findAccentColor(colors: any[], dominant: any): string {
+function findAccentColor(colors: {hex: string; r: number; g: number; b: number}[], dominant: {hex: string; r: number; g: number; b: number}): string {
   // Try to find a contrasting color
   for (const color of colors.slice(1, 5)) {
     const distance = colorDistance(dominant, color);
@@ -126,7 +126,7 @@ function findAccentColor(colors: any[], dominant: any): string {
 /**
  * Calculate color distance (Euclidean)
  */
-function colorDistance(c1: any, c2: any): number {
+function colorDistance(c1: {r: number; g: number; b: number}, c2: {r: number; g: number; b: number}): number {
   return Math.sqrt(
     Math.pow(c1.r - c2.r, 2) +
     Math.pow(c1.g - c2.g, 2) +

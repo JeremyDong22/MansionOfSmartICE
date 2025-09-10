@@ -58,9 +58,9 @@ export function useColorExtraction(imageUrl: string | null): ExtractedColors | n
         // Dynamic import to avoid SSR issues - use browser version
         const { Vibrant } = await import('node-vibrant/browser');
         
-        if (!mounted) return;
+        if (!mounted || !imageUrl) return;
 
-        const palette = await new Vibrant(imageUrl).getPalette();
+        const palette = await new Vibrant(imageUrl!).getPalette();
         
         if (!mounted) return;
 

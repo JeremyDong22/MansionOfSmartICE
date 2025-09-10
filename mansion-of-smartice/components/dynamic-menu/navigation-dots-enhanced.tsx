@@ -202,7 +202,9 @@ export function NavigationDotsEnhanced({
             return (
               <motion.button
                 key={index}
-                ref={el => dotsRefs.current[index] = el}
+                ref={el => {
+                  if (el) dotsRefs.current[index] = el;
+                }}
                 onClick={() => !isTouching && onDotClick(index)}
                 className={`
                   relative p-1 group

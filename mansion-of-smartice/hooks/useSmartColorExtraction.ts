@@ -124,10 +124,10 @@ export function useSmartColorExtraction(imageUrl: string | null): SmartExtracted
         // Dynamic import for browser environment - Vibrant is a named export
         const { Vibrant } = await import('node-vibrant/browser');
         
-        if (!mounted) return;
+        if (!mounted || !imageUrl) return;
 
         // Vibrant in browser mode is a constructor
-        const palette = await new Vibrant(imageUrl).getPalette();
+        const palette = await new Vibrant(imageUrl!).getPalette();
         
         if (!mounted) return;
 
