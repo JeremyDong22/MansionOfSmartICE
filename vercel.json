@@ -1,3 +1,5 @@
 {
-  "rootDirectory": "mansion-of-smartice"
+  "buildCommand": "cd mansion-of-smartice && npm run build",
+  "installCommand": "cd mansion-of-smartice && npm install",
+  "outputDirectory": "mansion-of-smartice/.next"
 }
