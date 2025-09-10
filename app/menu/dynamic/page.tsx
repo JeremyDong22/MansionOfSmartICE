@@ -79,7 +79,7 @@ export default function OptimizedDynamicMenuPage() {
   const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set());
   const [isMobileDevice, setIsMobileDevice] = useState(false);
   const [preloadIndex, setPreloadIndex] = useState<number | null>(null); // For virtual rendering optimization
-  const [enableSingleStep, setEnableSingleStep] = useState(true); // Single-step scroll mode
+  const [enableSingleStep, setEnableSingleStep] = useState(true); // Single-step scroll mode (default enabled)
   
   // Use reducer for combined state management (fewer re-renders)
   const [state, dispatch] = useReducer(appReducer, {
@@ -114,6 +114,9 @@ export default function OptimizedDynamicMenuPage() {
   const velocityRef = useRef(0);
   const rafIdRef = useRef<number | null>(null);
   const pendingScrollRef = useRef<number | null>(null);
+  const lastScrollTime = useRef<number>(0); // Track last scroll time for debouncing
+  const scrollAccumulator = useRef<number>(0); // Accumulate small scroll deltas
+  const isAnimating = useRef<boolean>(false); // Track animation state
   
   // Touch handling refs
   const touchStartY = useRef<number | null>(null);
@@ -273,7 +276,64 @@ export default function OptimizedDynamicMenuPage() {
     filteredDishesRef.current = filteredDishes;
   }, [filteredDishes]);
   
-  // Optimized scroll handler with RAF scheduling
+  // Smooth animation to target
+  const animateToTarget = useCallback((targetOffset: number) => {
+    const startOffset = stateRef.current.scroll.offset;
+    const distance = targetOffset - startOffset;
+    const duration = 300;
+    const startTime = performance.now();
+    
+    isAnimating.current = true;
+    
+    const animate = (currentTime: number) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      
+      // Easing function for smooth animation
+      const easeInOutCubic = (t: number) => {
+        return t < 0.5 
+          ? 4 * t * t * t 
+          : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      };
+      
+      const easedProgress = easeInOutCubic(progress);
+      const newOffset = startOffset + (distance * easedProgress);
+      
+      dispatch({
+        type: 'SET_SCROLL',
+        payload: {
+          offset: newOffset,
+          currentIndex: Math.round(newOffset),
+          isScrolling: true
+        }
+      });
+      
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        // Clear accumulator when animation completes
+        scrollAccumulator.current = 0;
+        
+        // Add small cooldown before allowing next scroll
+        setTimeout(() => {
+          isAnimating.current = false;
+        }, 50);
+        
+        dispatch({
+          type: 'SET_SCROLL',
+          payload: {
+            offset: targetOffset,
+            currentIndex: Math.round(targetOffset),
+            isScrolling: false
+          }
+        });
+      }
+    };
+    
+    requestAnimationFrame(animate);
+  }, []);
+
+  // Optimized scroll handler with accumulator
   const handleScroll = useCallback((e: WheelEvent) => {
     if (e.ctrlKey || e.metaKey) return;
     e.preventDefault();
@@ -282,82 +342,80 @@ export default function OptimizedDynamicMenuPage() {
     const isTrackpad = Math.abs(e.deltaY) < 50 || e.deltaX !== 0;
     
     if (enableSingleStep) {
-      // Single-step mode: Only move one item at a time
-      // Check if we're already animating
-      if (stateRef.current.scroll.isScrolling) return;
+      // Don't process new scrolls while animating
+      if (isAnimating.current) return;
       
-      // Determine direction
-      const direction = e.deltaY > 0 ? 1 : -1;
-      const currentIndex = Math.round(stateRef.current.scroll.offset);
-      const targetIndex = Math.max(0, Math.min(currentIndex + direction, filteredDishesRef.current.length - 1));
+      // Accumulate scroll delta with direction-aware sensitivity
+      const sensitivity = isTrackpad ? 0.008 : 0.004;
+      const delta = e.deltaY * sensitivity;
       
-      // If already at the target, don't do anything
-      if (currentIndex === targetIndex) return;
+      // Add to accumulator
+      scrollAccumulator.current += delta;
       
-      // Animate to the target index
-      dispatch({ 
-        type: 'SET_SCROLL', 
-        payload: { 
-          offset: targetIndex,
-          currentIndex: targetIndex,
+      // Check if accumulated enough to trigger a scroll
+      const threshold = 0.8; // Lowered threshold for more responsive feel
+      
+      if (Math.abs(scrollAccumulator.current) >= threshold) {
+        const direction = scrollAccumulator.current > 0 ? 1 : -1;
+        
+        // Use floor for current index to prevent rounding issues
+        const currentIndex = Math.floor(stateRef.current.scroll.offset + 0.5);
+        const targetIndex = Math.max(0, Math.min(
+          currentIndex + direction,
+          filteredDishesRef.current.length - 1
+        ));
+        
+        // Reset accumulator but keep remainder for smoother continuous scrolling
+        const remainder = Math.abs(scrollAccumulator.current) - threshold;
+        scrollAccumulator.current = direction * remainder * 0.5; // Keep some momentum
+        
+        // If already at the target, reset accumulator completely
+        if (currentIndex === targetIndex) {
+          scrollAccumulator.current = 0;
+          return;
+        }
+        
+        // Animate to target
+        animateToTarget(targetIndex);
+      }
+      
+    } else {
+      // Smooth continuous scroll mode with mouse following
+      const scrollSensitivity = isTrackpad ? 0.006 : 0.003;
+      const deltaY = e.deltaY;
+      
+      // Apply easing to the delta
+      const easedDelta = deltaY * scrollSensitivity;
+      
+      // Calculate new offset with smooth following
+      const currentOffset = stateRef.current.scroll.offset;
+      const targetOffset = Math.max(0, Math.min(
+        currentOffset + easedDelta,
+        filteredDishesRef.current.length - 1
+      ));
+      
+      // Immediately update with smooth transition
+      dispatch({
+        type: 'SET_SCROLL',
+        payload: {
+          offset: targetOffset,
+          currentIndex: Math.round(targetOffset),
           isScrolling: true
         }
       });
       
-      // Clear scrolling flag after animation
-      setTimeout(() => {
-        dispatch({ 
-          type: 'SET_SCROLL', 
-          payload: { 
-            isScrolling: false
-          }
-        });
-      }, 300); // Match animation duration
-      
-    } else {
-      // Free scroll mode (original behavior)
-      const scrollSensitivity = isTrackpad ? 0.004 : 0.002;
-      const deltaY = isTrackpad ? e.deltaY : Math.sign(e.deltaY) * 100;
-      
-      const maxDelta = 0.5;
-      let easedDelta = deltaY * scrollSensitivity;
-      easedDelta = Math.max(-maxDelta, Math.min(maxDelta, easedDelta));
-      
-      // Calculate new offset
-      const newOffset = Math.max(0, Math.min(
-        stateRef.current.scroll.offset + easedDelta,
-        filteredDishesRef.current.length - 1
-      ));
-      
-      // Store for RAF update
-      pendingScrollRef.current = newOffset;
-      velocityRef.current = easedDelta;
-      
-      // Schedule update with RAF if not already scheduled
-      if (!rafIdRef.current) {
-        rafIdRef.current = requestAnimationFrame(updateScroll);
-      }
-      
-      // Clear and reset snap timeout
+      // Clear existing timeout
       if (scrollTimeoutRef.current) {
         clearTimeout(scrollTimeoutRef.current);
       }
       
       // Snap to nearest after scrolling stops
       scrollTimeoutRef.current = setTimeout(() => {
-        const targetIndex = Math.round(stateRef.current.scroll.offset);
-        dispatch({ 
-          type: 'SET_SCROLL', 
-          payload: { 
-            offset: targetIndex,
-            currentIndex: targetIndex,
-            isScrolling: false,
-            velocity: 0
-          }
-        });
-      }, isTrackpad ? 150 : 200);
+        const snapTarget = Math.round(stateRef.current.scroll.offset);
+        animateToTarget(snapTarget);
+      }, 150);
     }
-  }, [enableSingleStep]);
+  }, [enableSingleStep, animateToTarget]);
 
   // Attach scroll listener
   useEffect(() => {
@@ -578,7 +636,8 @@ export default function OptimizedDynamicMenuPage() {
         />
       </div>
 
-      {/* Settings toggle for single-step mode */}
+      {/* Settings toggle for single-step mode - Hidden by default */}
+      {/* Uncomment to show toggle button
       <div className="fixed bottom-8 left-8 z-40">
         <button
           onClick={() => setEnableSingleStep(!enableSingleStep)}
@@ -589,6 +648,7 @@ export default function OptimizedDynamicMenuPage() {
           {enableSingleStep ? '单步滚动: 开' : '单步滚动: 关'}
         </button>
       </div>
+      */}
 
       {/* Navigation dots */}
       {filteredDishes.length > 0 && (
@@ -642,7 +702,9 @@ export default function OptimizedDynamicMenuPage() {
                   opacity: opacity,
                   transform: `translate3d(0, ${yPosition}px, 0) scale(${scale})`,
                   filter: distance > 1 ? `blur(${Math.min(distance * 1.5, 4)}px)` : 'none',
-                  transition: 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease-out',
+                  transition: enableSingleStep 
+                    ? 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-out'
+                    : 'transform 0.1s linear, opacity 0.1s linear',
                   willChange: 'transform, opacity',
                   backfaceVisibility: 'hidden',
                   perspective: '1000px'

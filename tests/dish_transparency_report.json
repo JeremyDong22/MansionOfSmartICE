@@ -1,0 +1,299 @@
+{
+  "/dishes/laokaili-feiyi-suantang.png": {
+    "requested": "/dishes/laokaili-feiyi-suantang.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/laokaili-feiyi-suantang.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/dadi-feixue-m9-wagyu.png": {
+    "requested": "/dishes/dadi-feixue-m9-wagyu.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/dadi-feixue-m9-wagyu.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/yesuan-su-wuhuazhi.png": {
+    "requested": "/dishes/yesuan-su-wuhuazhi.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/yesuan-su-wuhuazhi.png",
+    "exists": true,
+    "format": "JPEG",
+    "supports_alpha": false,
+    "has_transparent_pixels": null,
+    "needs_replacement": true
+  },
+  "/dishes/hulajiao-xianhuangniu-chiren.png": {
+    "requested": "/dishes/hulajiao-xianhuangniu-chiren.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/hulajiao-xianhuangniu-chiren.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/yunshan-xuehua-diaolong.png": {
+    "requested": "/dishes/yunshan-xuehua-diaolong.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/yunshan-xuehua-diaolong.png",
+    "exists": true,
+    "format": "JPEG",
+    "supports_alpha": false,
+    "has_transparent_pixels": null,
+    "needs_replacement": true
+  },
+  "/dishes/mujiangzi-xianhuangniurou.png": {
+    "requested": "/dishes/mujiangzi-xianhuangniurou.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/mujiangzi-xianhuangniurou.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/zisu-banbianyun.png": {
+    "requested": "/dishes/zisu-banbianyun.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/zisu-banbianyun.png",
+    "exists": true,
+    "format": "JPEG",
+    "supports_alpha": false,
+    "has_transparent_pixels": null,
+    "needs_replacement": true
+  },
+  "/dishes/heisonglu-wagyu-kaikouxiao.png": {
+    "requested": "/dishes/heisonglu-wagyu-kaikouxiao.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/heisonglu-wagyu-kaikouxiao.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/guizhou-chuantong-ruanshao.png": {
+    "requested": "/dishes/guizhou-chuantong-ruanshao.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/guizhou-chuantong-ruanshao.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/shougong-shuijing-huarou.png": {
+    "requested": "/dishes/shougong-shuijing-huarou.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/shougong-shuijing-huarou.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/huoshaoyun-tongguo-youmenji.png": {
+    "requested": "/dishes/huoshaoyun-tongguo-youmenji.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/huoshaoyun-tongguo-youmenji.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/haixian-pinpan.png": {
+    "requested": "/dishes/haixian-pinpan.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/haixian-pinpan.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/jingshui-xianxia.png": {
+    "requested": "/dishes/jingshui-xianxia.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/jingshui-xianxia.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/wuyu-pian.png": {
+    "requested": "/dishes/wuyu-pian.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/wuyu-pian.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/heijin-xiahua.png": {
+    "requested": "/dishes/heijin-xiahua.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/heijin-xiahua.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/caiyun-tudou.png": {
+    "requested": "/dishes/caiyun-tudou.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/caiyun-tudou.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/ou.png": {
+    "requested": "/dishes/ou.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/ou.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/xian-baihe.png": {
+    "requested": "/dishes/xian-baihe.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/xian-baihe.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/yelanzi-junguzuhe.png": {
+    "requested": "/dishes/yelanzi-junguzuhe.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/yelanzi-junguzuhe.png",
+    "exists": true,
+    "format": "JPEG",
+    "supports_alpha": false,
+    "has_transparent_pixels": null,
+    "needs_replacement": true
+  },
+  "/dishes/shimo-heidoufu.png": {
+    "requested": "/dishes/shimo-heidoufu.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/shimo-heidoufu.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/jiangbing-gua.png": {
+    "requested": "/dishes/jiangbing-gua.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/jiangbing-gua.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/xian-huanghua.png": {
+    "requested": "/dishes/xian-huanghua.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/xian-huanghua.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/sancui-wan.png": {
+    "requested": "/dishes/sancui-wan.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/sancui-wan.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/shanyao.png": {
+    "requested": "/dishes/shanyao.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/shanyao.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/xuepi-cai.png": {
+    "requested": "/dishes/xuepi-cai.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/xuepi-cai.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/daicun-shousi-luofeiyu.png": {
+    "requested": "/dishes/daicun-shousi-luofeiyu.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/daicun-shousi-luofeiyu.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/yezuoliao-leijiao-pidan.png": {
+    "requested": "/dishes/yezuoliao-leijiao-pidan.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/yezuoliao-leijiao-pidan.png",
+    "exists": true,
+    "format": "JPEG",
+    "supports_alpha": false,
+    "has_transparent_pixels": null,
+    "needs_replacement": true
+  },
+  "/dishes/guizhou-feiyi-siwawa.png": {
+    "requested": "/dishes/guizhou-feiyi-siwawa.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/guizhou-feiyi-siwawa.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/mujiangzi-jizhua.png": {
+    "requested": "/dishes/mujiangzi-jizhua.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/mujiangzi-jizhua.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/xifeng-hupi-zhuti.png": {
+    "requested": "/dishes/xifeng-hupi-zhuti.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/xifeng-hupi-zhuti.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/wuzhimaotao-shancha.png": {
+    "requested": "/dishes/wuzhimaotao-shancha.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/wuzhimaotao-shancha.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/ningmeng-shancha.png": {
+    "requested": "/dishes/ningmeng-shancha.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/ningmeng-shancha.png",
+    "exists": true,
+    "format": "PNG",
+    "supports_alpha": true,
+    "has_transparent_pixels": true,
+    "needs_replacement": false
+  },
+  "/dishes/yecili-shancha.png": {
+    "requested": "/dishes/yecili-shancha.png",
+    "actual": "/Users/jeremydong/Desktop/Smartice/MansionOfSmartICE/public/dishes/yecili-shancha.png",
+    "exists": true,
+    "format": "JPEG",
+    "supports_alpha": false,
+    "has_transparent_pixels": null,
+    "needs_replacement": true
+  }
+}

@@ -1,2 +1,1 @@
-- Every time you are assigned a task, or trying to modify something or create something, make sure you use Playwright MCP or Puppeteer MCP to test it after you finish the work.If the test doesn't work, adjust the result and test it again until your test is successful.
 - do not use playwright or puppeteer to test your fix unless I tell you do so
