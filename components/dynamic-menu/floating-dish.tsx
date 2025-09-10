@@ -132,16 +132,22 @@ export function FloatingDish({ image, name, isActive }: FloatingDishProps) {
               <>
                 {/* Actual image - no placeholder, direct display */}
                 <img 
-                  src={image} 
+                  src={image.endsWith('.jpg') ? image.replace('.jpg', '.png') : image} 
                   alt={name}
                   className="absolute inset-0 w-full h-full object-contain transition-opacity duration-300"
                   style={{
                     opacity: imageLoaded ? 1 : 0
                   }}
                   onLoad={() => setImageLoaded(true)}
-                  onError={() => {
-                    setImageError(true);
-                    setImageLoaded(false);
+                  onError={(e) => {
+                    // If PNG fails, try WebP
+                    const imgElement = e.currentTarget as HTMLImageElement;
+                    if (imgElement && !imgElement.src.includes('.webp')) {
+                      imgElement.src = image.replace(/\.(png|jpg)$/, '.webp');
+                    } else {
+                      setImageError(true);
+                      setImageLoaded(false);
+                    }
                   }}
                 />
               </>

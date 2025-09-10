@@ -43,7 +43,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Traditional Guizhou sour soup with tomatoes and wild peppers',
     price: 68,
     category: '汤底',
-    image: '/dishes/laokaili-feiyi-suantang.jpg',
+    image: '/dishes/laokaili-feiyi-suantang.png',
     preparationTime: 180,
     prepQuantity: 20,
     featured: true
@@ -58,7 +58,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Premium marbled beef, melts in your mouth',
     price: 88,
     category: '陆鲜',
-    image: '/dishes/dadi-feixue-m9-wagyu.jpg',
+    image: '/dishes/dadi-feixue-m9-wagyu.png',
     preparationTime: 300,
     prepQuantity: 25
   },
@@ -70,7 +70,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Crispy wild garlic with tender pork',
     price: 68,
     category: '陆鲜',
-    image: '/dishes/yesuan-su-wuhuazhi.jpg',
+    image: '/dishes/yesuan-su-wuhuazhi.png',
     preparationTime: 240,
     prepQuantity: 20
   },
@@ -82,7 +82,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Fresh beef tenderloin with Guizhou chili paste',
     price: 98,
     category: '陆鲜',
-    image: '/dishes/hulajiao-xianhuangniu-chiren.jpg',
+    image: '/dishes/hulajiao-xianhuangniu-chiren.png',
     preparationTime: 240,
     prepQuantity: 25,
     featured: true
@@ -95,7 +95,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Premium hanging tender with marbling',
     price: 128,
     category: '陆鲜',
-    image: '/dishes/yunshan-xuehua-diaolong.jpg',
+    image: '/dishes/yunshan-xuehua-diaolong.png',
     preparationTime: 240,
     prepQuantity: 30
   },
@@ -107,7 +107,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Fresh beef seasoned with litsea',
     price: 88,
     category: '陆鲜',
-    image: '/dishes/mujiangzi-xianhuangniurou.jpg',
+    image: '/dishes/mujiangzi-xianhuangniurou.png',
     preparationTime: 240,
     prepQuantity: 25
   },
@@ -119,7 +119,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Special meat wrapped in perilla leaves',
     price: 78,
     category: '陆鲜',
-    image: '/dishes/zisu-banbianyun.jpg',
+    image: '/dishes/zisu-banbianyun.png',
     preparationTime: 240,
     prepQuantity: 20
   },
@@ -131,7 +131,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Black truffle with premium wagyu beef',
     price: 188,
     category: '陆鲜',
-    image: '/dishes/heisonglu-wagyu-kaikouxiao.jpg',
+    image: '/dishes/heisonglu-wagyu-kaikouxiao.png',
     preparationTime: 180,
     prepQuantity: 15,
     featured: true
@@ -144,7 +144,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Traditional Guizhou pork specialty',
     price: 58,
     category: '小吃',
-    image: '/dishes/guizhou-chuantong-ruanshao.jpg',
+    image: '/dishes/guizhou-chuantong-ruanshao.png',
     preparationTime: 180,
     prepQuantity: 20
   },
@@ -156,7 +156,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Handmade crystal-clear pork slices',
     price: 68,
     category: '陆鲜',
-    image: '/dishes/shougong-shuijing-huarou.jpg',
+    image: '/dishes/shougong-shuijing-huarou.png',
     preparationTime: 180,
     prepQuantity: 25
   },
@@ -168,7 +168,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Tender chicken braised in copper pot',
     price: 88,
     category: '热菜',
-    image: '/dishes/huoshaoyun-tongguo-youmenji.jpg',
+    image: '/dishes/huoshaoyun-tongguo-youmenji.png',
     preparationTime: 300,
     prepQuantity: 10
   },
@@ -182,7 +182,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Fresh seafood selection platter',
     price: 168,
     category: '海鲜',
-    image: '/dishes/haixian-pinpan.jpg',
+    image: '/dishes/haixian-pinpan.png',
     preparationTime: 300,
     prepQuantity: 15,
     featured: true
@@ -195,7 +195,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Live shrimp, fresh and sweet',
     price: 88,
     category: '海鲜',
-    image: '/dishes/jingshui-xianxia.jpg',
+    image: '/dishes/jingshui-xianxia.png',
     preparationTime: 180,
     prepQuantity: 30
   },
@@ -207,7 +207,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Fresh black fish slices',
     price: 68,
     category: '海鲜',
-    image: '/dishes/wuyu-pian.jpg',
+    image: '/dishes/wuyu-pian.png',
     preparationTime: 120,
     prepQuantity: 25
   },
@@ -219,7 +219,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Handmade with selected shrimp',
     price: 78,
     category: '海鲜',
-    image: '/dishes/heijin-xiahua.jpg',
+    image: '/dishes/heijin-xiahua.png',
     preparationTime: 180,
     prepQuantity: 20
   },
@@ -233,7 +233,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Yunnan specialty rainbow potatoes',
     price: 38,
     category: '素菜',
-    image: '/dishes/caiyun-tudou.jpg',
+    image: '/dishes/caiyun-tudou.png',
     preparationTime: 180,
     prepQuantity: 25
   },
@@ -245,7 +245,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Crispy lotus root slices',
     price: 28,
     category: '素菜',
-    image: '/dishes/ou.jpg',
+    image: '/dishes/ou.png',
     preparationTime: 180,
     prepQuantity: 25
   },
@@ -257,7 +257,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Sweet fresh lily bulbs',
     price: 48,
     category: '素菜',
-    image: '/dishes/xian-baihe.jpg',
+    image: '/dishes/xian-baihe.png',
     preparationTime: 180,
     prepQuantity: 20
   },
@@ -269,7 +269,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Selection of wild mushrooms',
     price: 88,
     category: '素菜',
-    image: '/dishes/yelanzi-junguzuhe.jpg',
+    image: '/dishes/yelanzi-junguzuhe.png',
     preparationTime: 180,
     prepQuantity: 15,
     featured: true
@@ -282,7 +282,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Stone-ground black bean tofu',
     price: 38,
     category: '素菜',
-    image: '/dishes/shimo-heidoufu.jpg',
+    image: '/dishes/shimo-heidoufu.png',
     preparationTime: 180,
     prepQuantity: 20
   },
@@ -294,7 +294,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Refreshing ginger handle melon',
     price: 32,
     category: '素菜',
-    image: '/dishes/jiangbing-gua.jpg',
+    image: '/dishes/jiangbing-gua.png',
     preparationTime: 180,
     prepQuantity: 20
   },
@@ -306,7 +306,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Fresh daylily vegetables',
     price: 38,
     category: '素菜',
-    image: '/dishes/xian-huanghua.jpg',
+    image: '/dishes/xian-huanghua.png',
     preparationTime: 120,
     prepQuantity: 20
   },
@@ -318,7 +318,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Combination of three crispy vegetables',
     price: 38,
     category: '素菜',
-    image: '/dishes/sancui-wan.jpg',
+    image: '/dishes/sancui-wan.png',
     preparationTime: 120,
     prepQuantity: 30
   },
@@ -330,7 +330,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Healthy Chinese yam slices',
     price: 38,
     category: '素菜',
-    image: '/dishes/shanyao.jpg',
+    image: '/dishes/shanyao.png',
     preparationTime: 120,
     prepQuantity: 25
   },
@@ -342,7 +342,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Special blood vegetable',
     price: 32,
     category: '素菜',
-    image: '/dishes/xuepi-cai.jpg',
+    image: '/dishes/xuepi-cai.png',
     preparationTime: 120,
     prepQuantity: 25
   },
@@ -356,7 +356,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Dai style hand-shredded tilapia',
     price: 88,
     category: '小吃',
-    image: '/dishes/daicun-shousi-luofeiyu.jpg',
+    image: '/dishes/daicun-shousi-luofeiyu.png',
     preparationTime: 720,
     prepQuantity: 10,
     featured: true
@@ -369,7 +369,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Century egg with wild sauce and crushed pepper',
     price: 38,
     category: '小吃',
-    image: '/dishes/yezuoliao-leijiao-pidan.jpg',
+    image: '/dishes/yezuoliao-leijiao-pidan.png',
     preparationTime: 300,
     prepQuantity: 20
   },
@@ -381,7 +381,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Guizhou intangible cultural heritage silk doll',
     price: 48,
     category: '小吃',
-    image: '/dishes/guizhou-feiyi-siwawa.jpg',
+    image: '/dishes/guizhou-feiyi-siwawa.png',
     preparationTime: 240,
     prepQuantity: 15
   },
@@ -393,7 +393,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Chicken feet seasoned with litsea',
     price: 48,
     category: '小吃',
-    image: '/dishes/mujiangzi-jizhua.jpg',
+    image: '/dishes/mujiangzi-jizhua.png',
     preparationTime: 180,
     prepQuantity: 15
   },
@@ -405,7 +405,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Traditional crispy tender pork trotters',
     price: 98,
     category: '热菜',
-    image: '/dishes/xifeng-hupi-zhuti.jpg',
+    image: '/dishes/xifeng-hupi-zhuti.png',
     preparationTime: 480,
     prepQuantity: 10,
     featured: true
@@ -422,7 +422,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Healthy five finger peach tea',
     price: 28,
     category: '饮品',
-    image: '/dishes/wuzhimaotao-shancha.jpg',
+    image: '/dishes/wuzhimaotao-shancha.png',
     preparationTime: 10,
     prepQuantity: 50
   },
@@ -434,7 +434,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Refreshing lemon mountain tea',
     price: 22,
     category: '饮品',
-    image: '/dishes/ningmeng-shancha.jpg',
+    image: '/dishes/ningmeng-shancha.png',
     preparationTime: 10,
     prepQuantity: 50
   },
@@ -446,7 +446,7 @@ export const dishes: Dish[] = [
     descriptionEn: 'Wild prickly pear tea',
     price: 32,
     category: '饮品',
-    image: '/dishes/yecili-shancha.jpg',
+    image: '/dishes/yecili-shancha.png',
     preparationTime: 10,
     prepQuantity: 50
   }
