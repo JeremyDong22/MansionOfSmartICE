@@ -1,5 +1,6 @@
 {
   "buildCommand": "cd mansion-of-smartice && npm run build",
   "installCommand": "cd mansion-of-smartice && npm install",
-  "outputDirectory": "mansion-of-smartice/.next"
+  "outputDirectory": "mansion-of-smartice/.next",
+  "framework": "nextjs"
 }
