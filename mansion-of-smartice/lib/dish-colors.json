@@ -1,0 +1,557 @@
+{
+  "/dishes/caiyun-tudou.png": {
+    "primary": "#442822",
+    "secondary": "#442822",
+    "accent": "#b55055",
+    "backgroundGradient": "linear-gradient(135deg, #442822F5 0%, #442822 45%, #b55055F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#b55055",
+      "darkVibrant": "#6b2b25",
+      "lightVibrant": "#e4a092",
+      "muted": "#a15754",
+      "darkMuted": "#442822",
+      "lightMuted": "#d1a2a6"
+    }
+  },
+  "/dishes/dadi-feixue-m9-wagyu.png": {
+    "primary": "#682d0b",
+    "secondary": "#682d0b",
+    "accent": "#b9302b",
+    "backgroundGradient": "linear-gradient(135deg, #682d0bF5 0%, #682d0b 45%, #b9302bF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#b9302b",
+      "darkVibrant": "#682d0b",
+      "lightVibrant": "#f5ccad",
+      "muted": "#b19480",
+      "darkMuted": "#504234",
+      "lightMuted": "#d7bba7"
+    }
+  },
+  "/dishes/daicun-shousi-luofeiyu.png": {
+    "primary": "#8f2307",
+    "secondary": "#8f2307",
+    "accent": "#c47618",
+    "backgroundGradient": "linear-gradient(135deg, #8f2307F5 0%, #8f2307 45%, #c47618F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#c47618",
+      "darkVibrant": "#8f2307",
+      "lightVibrant": "#e9d4a7",
+      "muted": "#987d57",
+      "darkMuted": "#6e583a",
+      "lightMuted": "#dfd3bf"
+    }
+  },
+  "/dishes/flying-snow.png": {
+    "primary": "#374305",
+    "secondary": "#374305",
+    "accent": "#c49452",
+    "backgroundGradient": "linear-gradient(135deg, #374305F5 0%, #374305 45%, #c49452F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#c49452",
+      "darkVibrant": "#374305",
+      "lightVibrant": "#e4c796",
+      "muted": "#ac7a54",
+      "darkMuted": "#523a2c",
+      "lightMuted": "#d4cdb1"
+    }
+  },
+  "/dishes/guizhou-chuantong-ruanshao.png": {
+    "primary": "#51302e",
+    "secondary": "#51302e",
+    "accent": "#733c2c",
+    "backgroundGradient": "linear-gradient(135deg, #51302eF5 0%, #51302e 45%, #733c2cF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#733c2c",
+      "darkVibrant": "#2c4c04",
+      "lightVibrant": "#daac9f",
+      "muted": "#91a556",
+      "darkMuted": "#51302e",
+      "lightMuted": "#baa090"
+    }
+  },
+  "/dishes/guizhou-feiyi-siwawa.png": {
+    "primary": "#90805b",
+    "secondary": "#90805b",
+    "accent": "#bc9120",
+    "backgroundGradient": "linear-gradient(135deg, #90805bF5 0%, #90805b 45%, #bc9120F5 100%)",
+    "textColor": "#000000",
+    "allColors": {
+      "vibrant": "#bc9120",
+      "darkVibrant": "#2b3c04",
+      "lightVibrant": "#f4d190",
+      "muted": "#90805b",
+      "darkMuted": "#3b4b24",
+      "lightMuted": "#b6a072"
+    }
+  },
+  "/dishes/haixian-pinpan.png": {
+    "primary": "#873f0a",
+    "secondary": "#873f0a",
+    "accent": "#b44c04",
+    "backgroundGradient": "linear-gradient(135deg, #873f0aF5 0%, #873f0a 45%, #b44c04F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#b44c04",
+      "darkVibrant": "#873f0a",
+      "lightVibrant": "#edc6a0",
+      "muted": "#906e51",
+      "darkMuted": "#7e4742",
+      "lightMuted": "#d0bca4"
+    }
+  },
+  "/dishes/heijin-xiahua.png": {
+    "primary": "#4c4232",
+    "secondary": "#4c4232",
+    "accent": "#b6945b",
+    "backgroundGradient": "linear-gradient(135deg, #4c4232F5 0%, #4c4232 45%, #b6945bF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#b6945b",
+      "darkVibrant": "#243904",
+      "lightVibrant": "#f9dda2",
+      "muted": "#8b8c6d",
+      "darkMuted": "#4c4232",
+      "lightMuted": "#d2c4a6"
+    }
+  },
+  "/dishes/heisonglu-wagyu-kaikouxiao.png": {
+    "primary": "#3d3529",
+    "secondary": "#3d3529",
+    "accent": "#b1742c",
+    "backgroundGradient": "linear-gradient(135deg, #3d3529F5 0%, #3d3529 45%, #b1742cF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#b1742c",
+      "darkVibrant": "#354105",
+      "lightVibrant": "#f6cb93",
+      "muted": "#a77653",
+      "darkMuted": "#3d3529",
+      "lightMuted": "#ccb892"
+    }
+  },
+  "/dishes/hulajiao-xianhuangniu-chiren.png": {
+    "primary": "#773410",
+    "secondary": "#773410",
+    "accent": "#d08646",
+    "backgroundGradient": "linear-gradient(135deg, #773410F5 0%, #773410 45%, #d08646F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#d08646",
+      "darkVibrant": "#773410",
+      "lightVibrant": "#f2ce8e",
+      "muted": "#a65c58",
+      "darkMuted": "#703a36",
+      "lightMuted": "#ddc7b8"
+    }
+  },
+  "/dishes/huoshaoyun-tongguo-youmenji.png": {
+    "primary": "#242c18",
+    "secondary": "#242c18",
+    "accent": "#ed8b19",
+    "backgroundGradient": "linear-gradient(135deg, #242c18F5 0%, #242c18 45%, #ed8b19F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#ed8b19",
+      "darkVibrant": "#8a3b08",
+      "lightVibrant": "#e1cc98",
+      "muted": "#a06245",
+      "darkMuted": "#242c18",
+      "lightMuted": "#a49c9c"
+    }
+  },
+  "/dishes/jiangbing-gua.png": {
+    "primary": "#804204",
+    "secondary": "#804204",
+    "accent": "#b87111",
+    "backgroundGradient": "linear-gradient(135deg, #804204F5 0%, #804204 45%, #b87111F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#b87111",
+      "darkVibrant": "#804204",
+      "lightVibrant": "#e4c899",
+      "muted": "#848353",
+      "darkMuted": "#656d32",
+      "lightMuted": "#785720"
+    }
+  },
+  "/dishes/jingshui-xianxia.png": {
+    "primary": "#705c05",
+    "secondary": "#705c05",
+    "accent": "#cc863b",
+    "backgroundGradient": "linear-gradient(135deg, #705c05F5 0%, #705c05 45%, #cc863bF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#cc863b",
+      "darkVibrant": "#705c05",
+      "lightVibrant": "#f4c690",
+      "muted": "#977d5b",
+      "darkMuted": "#725636",
+      "lightMuted": "#d2bbad"
+    }
+  },
+  "/dishes/laokaili-feiyi-suantang.png": {
+    "primary": "#a40f04",
+    "secondary": "#a40f04",
+    "accent": "#e53404",
+    "backgroundGradient": "linear-gradient(135deg, #a40f04F5 0%, #a40f04 45%, #e53404F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#e53404",
+      "darkVibrant": "#a40f04",
+      "lightVibrant": "#f7c083",
+      "muted": "#6d7589",
+      "darkMuted": "#3d3c44",
+      "lightMuted": "#9c9793"
+    }
+  },
+  "/dishes/mujiangzi-jizhao.png": {
+    "primary": "#783a05",
+    "secondary": "#783a05",
+    "accent": "#ce790a",
+    "backgroundGradient": "linear-gradient(135deg, #783a05F5 0%, #783a05 45%, #ce790aF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#ce790a",
+      "darkVibrant": "#783a05",
+      "lightVibrant": "#f8cd8f",
+      "muted": "#957863",
+      "darkMuted": "#755339",
+      "lightMuted": "#aea17d"
+    }
+  },
+  "/dishes/mujiangzi-jizhua.png": {
+    "primary": "#783a05",
+    "secondary": "#783a05",
+    "accent": "#ce790a",
+    "backgroundGradient": "linear-gradient(135deg, #783a05F5 0%, #783a05 45%, #ce790aF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#ce790a",
+      "darkVibrant": "#783a05",
+      "lightVibrant": "#f8cd8f",
+      "muted": "#957863",
+      "darkMuted": "#755339",
+      "lightMuted": "#aea17d"
+    }
+  },
+  "/dishes/mujiangzi-xianhuangniurou.png": {
+    "primary": "#473627",
+    "secondary": "#473627",
+    "accent": "#ce433d",
+    "backgroundGradient": "linear-gradient(135deg, #473627F5 0%, #473627 45%, #ce433dF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#ce433d",
+      "darkVibrant": "#7a3c09",
+      "lightVibrant": "#e8bd99",
+      "muted": "#945960",
+      "darkMuted": "#473627",
+      "lightMuted": "#9d9284"
+    }
+  },
+  "/dishes/ningmeng-shancha.png": {
+    "primary": "#543138",
+    "secondary": "#543138",
+    "accent": "#ecb21e",
+    "backgroundGradient": "linear-gradient(135deg, #543138F5 0%, #543138 45%, #ecb21eF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#ecb21e",
+      "darkVibrant": "#90450a",
+      "lightVibrant": "#ecc269",
+      "muted": "#7a5c56",
+      "darkMuted": "#543138",
+      "lightMuted": "#a29497"
+    }
+  },
+  "/dishes/ou.png": {
+    "primary": "#5e3b19",
+    "secondary": "#5e3b19",
+    "accent": "#cd7f3b",
+    "backgroundGradient": "linear-gradient(135deg, #5e3b19F5 0%, #5e3b19 45%, #cd7f3bF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#cd7f3b",
+      "darkVibrant": "#5e3b19",
+      "lightVibrant": "#f4be87",
+      "muted": "#9a7a6e",
+      "darkMuted": "#46522f",
+      "lightMuted": "#ccad8c"
+    }
+  },
+  "/dishes/sancui-wan.png": {
+    "primary": "#492c24",
+    "secondary": "#492c24",
+    "accent": "#ce851b",
+    "backgroundGradient": "linear-gradient(135deg, #492c24F5 0%, #492c24 45%, #ce851bF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#ce851b",
+      "darkVibrant": "#79420b",
+      "lightVibrant": "#eca463",
+      "muted": "#af9d60",
+      "darkMuted": "#492c24",
+      "lightMuted": "#884910"
+    }
+  },
+  "/dishes/shanyao.png": {
+    "primary": "#6d4113",
+    "secondary": "#6d4113",
+    "accent": "#d0a80b",
+    "backgroundGradient": "linear-gradient(135deg, #6d4113F5 0%, #6d4113 45%, #d0a80bF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#d0a80b",
+      "darkVibrant": "#6d4113",
+      "lightVibrant": "#ecca7a",
+      "muted": "#aa8f61",
+      "darkMuted": "#6a5f4a",
+      "lightMuted": "#d4bc9c"
+    }
+  },
+  "/dishes/shimo-heidoufu.png": {
+    "primary": "#4a4032",
+    "secondary": "#4a4032",
+    "accent": "#7c4428",
+    "backgroundGradient": "linear-gradient(135deg, #4a4032F5 0%, #4a4032 45%, #7c4428F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#7c4428",
+      "darkVibrant": "#3c5404",
+      "lightVibrant": "#e4bc98",
+      "muted": "#998269",
+      "darkMuted": "#4a4032",
+      "lightMuted": "#cdbaa2"
+    }
+  },
+  "/dishes/shougong-shuijing-huarou.png": {
+    "primary": "#665c0f",
+    "secondary": "#665c0f",
+    "accent": "#c4a83c",
+    "backgroundGradient": "linear-gradient(135deg, #665c0fF5 0%, #665c0f 45%, #c4a83cF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#c4a83c",
+      "darkVibrant": "#665c0f",
+      "lightVibrant": "#dcc3a9",
+      "muted": "#ab9658",
+      "darkMuted": "#546c46",
+      "lightMuted": "#d3c4a9"
+    }
+  },
+  "/dishes/sour-soup-base.jpg": {
+    "primary": "#1a2f4f",
+    "secondary": "#3b4960",
+    "accent": "#3f72bf",
+    "backgroundGradient": "linear-gradient(135deg, #1a2f4fF5 0%, #3b4960 45%, #3f72bfF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#3f72bf",
+      "darkVibrant": "#1a2f4f",
+      "lightVibrant": "#d8e1ed",
+      "muted": "#657a9f",
+      "darkMuted": "#3b4960",
+      "lightMuted": "#bbc3cb"
+    }
+  },
+  "/dishes/sour-soup-base.png": {
+    "primary": "#3a342c",
+    "secondary": "#3a342c",
+    "accent": "#e53404",
+    "backgroundGradient": "linear-gradient(135deg, #3a342cF5 0%, #3a342c 45%, #e53404F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#e53404",
+      "darkVibrant": "#a11304",
+      "lightVibrant": "#f6c294",
+      "muted": "#b48c64",
+      "darkMuted": "#3a342c",
+      "lightMuted": "#8d480b"
+    }
+  },
+  "/dishes/wuyu-pian.png": {
+    "primary": "#312515",
+    "secondary": "#312515",
+    "accent": "#d5b214",
+    "backgroundGradient": "linear-gradient(135deg, #312515F5 0%, #312515 45%, #d5b214F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#d5b214",
+      "darkVibrant": "#948404",
+      "lightVibrant": "#f3dc84",
+      "muted": "#977553",
+      "darkMuted": "#312515",
+      "lightMuted": "#d4c5ae"
+    }
+  },
+  "/dishes/wuzhimaotao-shancha.png": {
+    "primary": "#82300d",
+    "secondary": "#82300d",
+    "accent": "#da400f",
+    "backgroundGradient": "linear-gradient(135deg, #82300dF5 0%, #82300d 45%, #da400fF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#da400f",
+      "darkVibrant": "#82300d",
+      "lightVibrant": "#eac58a",
+      "muted": "#a87954",
+      "darkMuted": "#614937",
+      "lightMuted": "#c09872"
+    }
+  },
+  "/dishes/xian-baihe.png": {
+    "primary": "#504029",
+    "secondary": "#504029",
+    "accent": "#b38f53",
+    "backgroundGradient": "linear-gradient(135deg, #504029F5 0%, #504029 45%, #b38f53F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#b38f53",
+      "darkVibrant": "#98782e",
+      "lightVibrant": "#edc68c",
+      "muted": "#ba9a69",
+      "darkMuted": "#504029",
+      "lightMuted": "#d0ba9c"
+    }
+  },
+  "/dishes/xian-huanghua.png": {
+    "primary": "#664232",
+    "secondary": "#664232",
+    "accent": "#a49f08",
+    "backgroundGradient": "linear-gradient(135deg, #664232F5 0%, #664232 45%, #a49f08F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#a49f08",
+      "darkVibrant": "#6f6308",
+      "lightVibrant": "#e4dea3",
+      "muted": "#614c4c",
+      "darkMuted": "#664232",
+      "lightMuted": "#766e22"
+    }
+  },
+  "/dishes/xifeng-hupi-zhuti.png": {
+    "primary": "#4a3127",
+    "secondary": "#4a3127",
+    "accent": "#de8d18",
+    "backgroundGradient": "linear-gradient(135deg, #4a3127F5 0%, #4a3127 45%, #de8d18F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#de8d18",
+      "darkVibrant": "#703009",
+      "lightVibrant": "#eeb46a",
+      "muted": "#a56160",
+      "darkMuted": "#4a3127",
+      "lightMuted": "#c4ac9f"
+    }
+  },
+  "/dishes/xuepi-cai.png": {
+    "primary": "#673a0c",
+    "secondary": "#673a0c",
+    "accent": "#c98243",
+    "backgroundGradient": "linear-gradient(135deg, #673a0cF5 0%, #673a0c 45%, #c98243F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#c98243",
+      "darkVibrant": "#673a0c",
+      "lightVibrant": "#ec9c5c",
+      "muted": "#906f6f",
+      "darkMuted": "#653a3b",
+      "lightMuted": "#d1c1be"
+    }
+  },
+  "/dishes/yecili-shancha.png": {
+    "primary": "#5a412d",
+    "secondary": "#5a412d",
+    "accent": "#d09f50",
+    "backgroundGradient": "linear-gradient(135deg, #5a412dF5 0%, #5a412d 45%, #d09f50F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#d09f50",
+      "darkVibrant": "#8b4c0b",
+      "lightVibrant": "#e2c596",
+      "muted": "#7b5842",
+      "darkMuted": "#5a412d",
+      "lightMuted": "#b1b8b6"
+    }
+  },
+  "/dishes/yelanzi-junguzuhe.png": {
+    "primary": "#50522a",
+    "secondary": "#50522a",
+    "accent": "#db8608",
+    "backgroundGradient": "linear-gradient(135deg, #50522aF5 0%, #50522a 45%, #db8608F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#db8608",
+      "darkVibrant": "#7b4b07",
+      "lightVibrant": "#e7c492",
+      "muted": "#a57d52",
+      "darkMuted": "#50522a",
+      "lightMuted": "#7d551b"
+    }
+  },
+  "/dishes/yesuan-su-wuhuazhi.png": {
+    "primary": "#861d08",
+    "secondary": "#861d08",
+    "accent": "#ce8b2f",
+    "backgroundGradient": "linear-gradient(135deg, #861d08F5 0%, #861d08 45%, #ce8b2fF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#ce8b2f",
+      "darkVibrant": "#861d08",
+      "lightVibrant": "#edc17f",
+      "muted": "#64847c",
+      "darkMuted": "#6a413e",
+      "lightMuted": "#d4aba1"
+    }
+  },
+  "/dishes/yezuoliao-leijiao-pidan.png": {
+    "primary": "#790b04",
+    "secondary": "#790b04",
+    "accent": "#e48d0a",
+    "backgroundGradient": "linear-gradient(135deg, #790b04F5 0%, #790b04 45%, #e48d0aF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#e48d0a",
+      "darkVibrant": "#790b04",
+      "lightVibrant": "#f3c065",
+      "muted": "#9d7760",
+      "darkMuted": "#764b33",
+      "lightMuted": "#aeac73"
+    }
+  },
+  "/dishes/yunshan-xuehua-diaolong.png": {
+    "primary": "#703a08",
+    "secondary": "#703a08",
+    "accent": "#cf2729",
+    "backgroundGradient": "linear-gradient(135deg, #703a08F5 0%, #703a08 45%, #cf2729F5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#cf2729",
+      "darkVibrant": "#703a08",
+      "lightVibrant": "#f2c9b5",
+      "muted": "#a87065",
+      "darkMuted": "#71523b",
+      "lightMuted": "#c3b5a6"
+    }
+  },
+  "/dishes/zisu-banbianyun.png": {
+    "primary": "#532c34",
+    "secondary": "#532c34",
+    "accent": "#bd6b2e",
+    "backgroundGradient": "linear-gradient(135deg, #532c34F5 0%, #532c34 45%, #bd6b2eF5 100%)",
+    "textColor": "#ffffff",
+    "allColors": {
+      "vibrant": "#bd6b2e",
+      "darkVibrant": "#723d10",
+      "lightVibrant": "#e2b18d",
+      "muted": "#95694f",
+      "darkMuted": "#532c34",
+      "lightMuted": "#bf947e"
+    }
+  }
+}
