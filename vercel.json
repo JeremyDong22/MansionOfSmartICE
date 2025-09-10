@@ -1,6 +1,6 @@
 {
-  "rootDirectory": "mansion-of-smartice",
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
+  "buildCommand": "cd mansion-of-smartice && npm run build",
+  "installCommand": "cd mansion-of-smartice && npm install",
+  "outputDirectory": "mansion-of-smartice/.next",
   "framework": "nextjs"
 }
