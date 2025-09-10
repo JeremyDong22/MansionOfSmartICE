@@ -1,13 +1,8 @@
 {
-  "buildCommand": "cd mansion-of-smartice && npm run build",
-  "outputDirectory": "mansion-of-smartice/.next",
-  "installCommand": "cd mansion-of-smartice && npm install",
+  "rootDirectory": "mansion-of-smartice",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install",
   "framework": "nextjs",
-  "regions": ["sin1"],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/mansion-of-smartice/$1"
-    }
-  ]
+  "regions": ["sin1"]
 }
