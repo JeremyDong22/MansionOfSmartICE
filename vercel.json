@@ -2,7 +2,5 @@
   "rootDirectory": "mansion-of-smartice",
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "installCommand": "npm install",
-  "framework": "nextjs",
-  "regions": ["sin1"]
+  "framework": "nextjs"
 }
