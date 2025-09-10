@@ -124,6 +124,14 @@ async function main() {
   const dishesDir = path.join(__dirname, '../public/dishes');
   const outputFile = path.join(__dirname, '../lib/dish-colors.json');
   
+  // Check if colors file already exists
+  const colorsExist = await fs.access(outputFile).then(() => true).catch(() => false);
+  if (colorsExist) {
+    console.log('✅ Color data already exists at:', outputFile);
+    console.log('ℹ️  Skipping extraction. Delete dish-colors.json to regenerate.\n');
+    return;
+  }
+  
   try {
     // Read all files in dishes directory
     const files = await fs.readdir(dishesDir);

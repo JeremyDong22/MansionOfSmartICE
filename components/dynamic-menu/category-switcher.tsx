@@ -227,7 +227,7 @@ export function CategorySwitcher({ selectedCategory, onCategoryChange }: Categor
               paddingLeft: 'calc(50vw - 60px)',
               paddingRight: 'calc(50vw - 60px)',
               opacity: isInitialized ? 1 : 0,
-              overflow: isMobile ? 'auto' : 'hidden' // Disable scroll on PC
+              overflow: 'auto' // Enable scroll on both mobile and PC for centering to work
             }}
             onScroll={handleScroll}
             onMouseDown={(e) => {
@@ -308,7 +308,28 @@ export function CategorySwitcher({ selectedCategory, onCategoryChange }: Categor
                   // Only allow clicks on PC, not mobile
                   if (isMobile) return;
                   
-                  // Simple direct state update for PC
+                  // Scroll to center the clicked item on PC
+                  if (scrollRef.current) {
+                    const container = scrollRef.current;
+                    const items = container.querySelectorAll('button');
+                    const clickedItem = items[i];
+                    
+                    if (clickedItem) {
+                      const containerRect = container.getBoundingClientRect();
+                      const itemRect = clickedItem.getBoundingClientRect();
+                      const containerCenter = containerRect.left + containerRect.width / 2;
+                      const itemCenter = itemRect.left + itemRect.width / 2;
+                      const offset = itemCenter - containerCenter;
+                      
+                      // Smooth scroll to center the clicked item
+                      container.scrollBy({
+                        left: offset,
+                        behavior: 'smooth'
+                      });
+                    }
+                  }
+                  
+                  // Update state
                   setCenterIndex(i);
                   onCategoryChange(categories[i]);
                   
