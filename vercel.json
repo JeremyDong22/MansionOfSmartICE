@@ -1,0 +1,18 @@
+{
+  "buildCommand": "cd mansion-of-smartice && npm run build",
+  "outputDirectory": "mansion-of-smartice/.next",
+  "installCommand": "cd mansion-of-smartice && npm install",
+  "framework": "nextjs",
+  "regions": ["sin1"],
+  "functions": {
+    "mansion-of-smartice/app/api/image-color/route.ts": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/mansion-of-smartice/$1"
+    }
+  ]
+}
