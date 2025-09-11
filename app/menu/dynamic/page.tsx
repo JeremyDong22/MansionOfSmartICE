@@ -5,7 +5,6 @@
 
 import { useState, useEffect, useRef, useReducer, useCallback } from 'react';
 import { motion } from 'framer-motion';
-import NavigationHeader from '@/components/navigation-header';
 import { FloatingDish } from '@/components/dynamic-menu/floating-dish';
 import { NavigationDots } from '@/components/dynamic-menu/navigation-dots';
 import { NavigationDotsEnhanced } from '@/components/dynamic-menu/navigation-dots-enhanced';
@@ -80,6 +79,7 @@ export default function OptimizedDynamicMenuPage() {
   const [isMobileDevice, setIsMobileDevice] = useState(false);
   const [preloadIndex, setPreloadIndex] = useState<number | null>(null); // For virtual rendering optimization
   const [enableSingleStep, setEnableSingleStep] = useState(true); // Single-step scroll mode (default enabled)
+  const [isPageReady, setIsPageReady] = useState(false); // Track page readiness
   
   // Use reducer for combined state management (fewer re-renders)
   const [state, dispatch] = useReducer(appReducer, {
@@ -127,7 +127,7 @@ export default function OptimizedDynamicMenuPage() {
   const lastTouchTime = useRef<number>(0);
   const inertiaAnimationId = useRef<number | null>(null);
 
-  // Detect mobile device
+  // Detect mobile device and set page ready
   useEffect(() => {
     const checkMobile = () => {
       const hasTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -137,6 +137,11 @@ export default function OptimizedDynamicMenuPage() {
     };
     
     checkMobile();
+    // Set page ready after initial setup
+    requestAnimationFrame(() => {
+      setIsPageReady(true);
+    });
+    
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
@@ -579,13 +584,29 @@ export default function OptimizedDynamicMenuPage() {
     touchVelocityRef.current = 0;
   };
 
+  // Show loading state while page initializes
+  if (!isPageReady) {
+    return (
+      <div className="fixed inset-0 bg-black flex items-center justify-center">
+        <div className="text-center">
+          <div className="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-white/50"></div>
+          <p className="mt-4 text-white/70 text-sm tracking-wider">加载中...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div 
       ref={containerRef}
-      className="relative h-screen overflow-hidden"
+      className="relative h-screen overflow-hidden bg-black"
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
+      style={{
+        opacity: isPageReady ? 1 : 0,
+        transition: 'opacity 0.3s ease-in-out'
+      }}
     >
       {/* Optimized background with precomputed colors */}
       <div className="absolute inset-0">
@@ -622,8 +643,7 @@ export default function OptimizedDynamicMenuPage() {
         }}
       />
 
-      {/* Navigation Header */}
-      <NavigationHeader />
+      {/* Navigation Header removed - already in root layout */}
       
       {/* Top gradient overlay */}
       <div className="fixed top-0 left-0 right-0 h-32 bg-gradient-to-b from-black/50 via-black/25 to-transparent z-10 pointer-events-none" />

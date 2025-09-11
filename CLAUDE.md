@@ -1,1 +1,2 @@
 - do not use playwright or puppeteer to test your fix unless I tell you do so
+- push to github will auto deploy to vercel
