@@ -22,7 +22,7 @@ export function CategorySwitcher({ selectedCategory, onCategoryChange }: Categor
   
   // Remove 'all' from categories
   const categories: DishCategory[] = [
-    '汤底', '陆鲜', '海鲜', '素菜', '凉菜', '小吃甜点', '饮品'
+    '汤底', '陆鲜', '海鲜', '素菜', '热菜', '小吃', '饮品'
   ];
 
   const categoryLabels: Record<DishCategory, string> = {
@@ -30,8 +30,8 @@ export function CategorySwitcher({ selectedCategory, onCategoryChange }: Categor
     '陆鲜': '陆鲜',
     '海鲜': '海鲜',
     '素菜': '素菜',
-    '凉菜': '凉菜',
-    '小吃甜点': '小吃甜点',
+    '热菜': '热菜',
+    '小吃': '小吃',
     '饮品': '饮品'
   };
 
