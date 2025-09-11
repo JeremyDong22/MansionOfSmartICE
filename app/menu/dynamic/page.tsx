@@ -158,8 +158,8 @@ export default function OptimizedDynamicMenuPage() {
               console.warn(`Failed to load image: ${dish.image}`);
               resolve();
             };
-            // Ensure we're using the correct path
-            const imageSrc = dish.image.endsWith('.jpg') ? dish.image.replace('.jpg', '.png') : dish.image;
+            // Use WebP format for better performance
+            const imageSrc = dish.image.endsWith('.jpg') ? dish.image.replace('.jpg', '.webp') : dish.image;
             img.src = imageSrc;
           });
         });
