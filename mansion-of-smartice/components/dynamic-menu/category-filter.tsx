@@ -14,13 +14,13 @@ interface CategoryFilterProps {
 export function CategoryFilter({ selectedCategory, onCategoryChange }: CategoryFilterProps) {
   const categories: (DishCategory | 'all')[] = [
     'all',
-    'appetizers',
-    'soups',
-    'meat',
-    'seafood',
-    'vegetables',
-    'desserts',
-    'beverages'
+    '汤底',
+    '陆鲜',
+    '海鲜',
+    '素菜',
+    '热菜',
+    '小吃',
+    '饮品'
   ];
 
   return (
