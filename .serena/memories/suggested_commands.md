@@ -2,12 +2,12 @@
 
 ## Development Server
 ```bash
-cd mansion-of-smartice
 npm run dev      # Start development server with Turbopack on http://localhost:3000
 ```
 
 ## Build & Production
 ```bash
+npm run prebuild # Extract colors from images (runs automatically before build)
 npm run build    # Build for production with Turbopack
 npm run start    # Start production server
 ```
@@ -15,6 +15,14 @@ npm run start    # Start production server
 ## Code Quality
 ```bash
 npm run lint     # Run ESLint for code linting
+```
+
+## Image Processing
+```bash
+npm run extract-colors   # Extract color palettes from dish images
+npm run optimize-images  # Compress images to <500KB
+npm run apply-optimized  # Replace original images with optimized versions
+node scripts/remove-black-background.js  # Remove black backgrounds, add transparency
 ```
 
 ## Package Management
@@ -58,4 +66,11 @@ npx tsc --noEmit  # Type check without emitting files
 ps aux | grep node   # Find Node.js processes
 kill -9 [PID]        # Kill process by ID
 lsof -i :3000        # Check what's using port 3000
+```
+
+## Background Process Management (Claude Code)
+```bash
+# When running npm run dev in background:
+# Use BashOutput tool to check output
+# Use KillBash tool to stop the server if needed
 ```
