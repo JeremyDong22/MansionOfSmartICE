@@ -16,9 +16,9 @@ export function CategorySwitcher({ selectedCategory, onCategoryChange }: Categor
   const [centerIndex, setCenterIndex] = useState(0);
   const [showCategoryName, setShowCategoryName] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
-  const fadeTimeout = useRef<NodeJS.Timeout>();
+  const fadeTimeout = useRef<NodeJS.Timeout | null>(null);
   const isDragging = useRef(false);
-  const scrollTimeout = useRef<NodeJS.Timeout>();
+  const scrollTimeout = useRef<NodeJS.Timeout | null>(null);
   
   // Remove 'all' from categories
   const categories: DishCategory[] = [
