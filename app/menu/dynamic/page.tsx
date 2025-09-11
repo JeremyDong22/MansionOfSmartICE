@@ -587,10 +587,24 @@ export default function OptimizedDynamicMenuPage() {
   // Show loading state while page initializes
   if (!isPageReady) {
     return (
-      <div className="fixed inset-0 bg-black flex items-center justify-center">
-        <div className="text-center">
-          <div className="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-white/50"></div>
-          <p className="mt-4 text-white/70 text-sm tracking-wider">加载中...</p>
+      <div className="fixed inset-0 bg-gradient-to-br from-zinc-900 via-black to-zinc-900 flex items-center justify-center">
+        <div className="relative">
+          {/* Elegant three-dot loader */}
+          <div className="flex space-x-2">
+            <div className="w-2 h-2 bg-white/60 rounded-full animate-[pulse_1.4s_ease-in-out_infinite]"></div>
+            <div className="w-2 h-2 bg-white/60 rounded-full animate-[pulse_1.4s_ease-in-out_0.2s_infinite]"></div>
+            <div className="w-2 h-2 bg-white/60 rounded-full animate-[pulse_1.4s_ease-in-out_0.4s_infinite]"></div>
+          </div>
+          
+          {/* Restaurant name with fade-in effect */}
+          <div className="mt-8 overflow-hidden">
+            <h2 className="text-white/30 text-xl font-extralight tracking-[0.3em] animate-[fadeInUp_0.8s_ease-out]">
+              野百灵
+            </h2>
+            <p className="text-white/20 text-xs tracking-[0.2em] mt-1 animate-[fadeInUp_0.8s_ease-out_0.2s_both]">
+              WILDLARK
+            </p>
+          </div>
         </div>
       </div>
     );
@@ -603,10 +617,6 @@ export default function OptimizedDynamicMenuPage() {
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
-      style={{
-        opacity: isPageReady ? 1 : 0,
-        transition: 'opacity 0.3s ease-in-out'
-      }}
     >
       {/* Optimized background with precomputed colors */}
       <div className="absolute inset-0">
